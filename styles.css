@@ -24,6 +24,7 @@ div.wrapper {
     border-radius: 2em;
     padding: 1em 2em;
     margin: 1em auto;
+    width: 900px; 
 }
 
 
@@ -39,6 +40,10 @@ main {
     background-color: #c3c3c3;
     font-size: 140%;
     line-height: 1.4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: .5em;
+
 }
 
 
@@ -48,6 +53,8 @@ header {
     align-items: center;
     padding: 1em;
     margin: 0 0 1em 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 header h1 {
@@ -60,7 +67,7 @@ header h1 {
 /* Image styles
 ------------------------------------*/
 img {
-    
+    max-width: 100%;
 }
 
 figcaption {
@@ -85,6 +92,7 @@ nav {
 
 nav ul {
     list-style-type: none;
+    display: flex;
 }
 
 nav a {
@@ -110,7 +118,26 @@ nav a:hover {
 
 /* Tablet Media Query
 ------------------------------------*/
+@media only screen and (max-width: 899px) {
 
+    div.wrapper {
+        width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 175%;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 
 
@@ -122,7 +149,44 @@ nav a:hover {
 
 /* Phone Media Query
 ------------------------------------*/
+@media (max-width: 480px)  {
+    
+    div.wrapper {
+        padding: 0; 
+    }
 
+    header {
+        border-radius: 0;
+        padding: .5em 0 0 0;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul a {
+        padding: 1em;
+        text-align: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-gap: 1.5em;
+    }
+
+    figure.ivan {
+        grid-row: 1/2; 
+    }
+
+    section.second {
+        display: none; 
+    }
+
+}
 
 
 
