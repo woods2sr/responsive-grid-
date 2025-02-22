@@ -1,0 +1,144 @@
+/* Basic Styles
+--------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2a5655;
+    font-family: sans-serif;
+}
+
+section.box {
+    padding: 1em 2em;
+    border: 1px solid #cccccc;
+    background-color: #f5f3f1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 1em;
+}
+
+div.wrapper {
+    background-color: #f0ead9;
+    border-radius: 2em;
+    padding: 1em 2em;
+    margin: 1em auto;
+}
+
+
+
+
+
+
+/* DESKTOP Layout
+------------------------------------*/
+main {
+    padding: .75em;
+    border-radius: 1em;
+    background-color: #c3c3c3;
+    font-size: 140%;
+    line-height: 1.4;
+}
+
+
+header {
+    background-color: gainsboro;
+    border-radius: 1em;
+    align-items: center;
+    padding: 1em;
+    margin: 0 0 1em 0;
+}
+
+header h1 {
+    font-size: 200%;
+    text-align: center;
+}
+
+
+
+/* Image styles
+------------------------------------*/
+img {
+    
+}
+
+figcaption {
+    font-size: 70%;
+    text-align: center;
+}
+
+
+figure.ivan img {
+    border: 5px solid white;
+    box-shadow: 0 5px 5px #a2a2a2;
+}
+
+
+/* Navigation
+------------------------------------*/
+
+nav {
+    background-color: #cbcbcb;
+    border-radius: .5em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    padding: .5em 1em;
+    text-transform: uppercase;
+    display: block;
+    color: black;
+    text-decoration: none;
+    background-color: #f5f3f1;
+    border-radius: 2em;
+    margin: .25em;
+}
+
+nav a:hover {
+    background-color: ghostwhite;
+    border-radius: 2em;
+}
+
+
+
+
+
+
+/* Tablet Media Query
+------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/* Phone Media Query
+------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
